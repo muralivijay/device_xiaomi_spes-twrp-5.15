@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/sbin/bash
 # This script is needed to automatically set device props.
 
 LOG_PATH=/tmp/recovery.log

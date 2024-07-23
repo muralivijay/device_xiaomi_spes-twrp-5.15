@@ -28,11 +28,11 @@ load_touch_drivers() {
 	for i in $modules
 	do
 		# check whether the module is already loaded
-		local f=$(lsmod | grep $i);
+		local f=$(lsmod | grep "$i")
 		[ -n "$f" ] && return; # module is already loaded - return
 
 		# try to load the module
-		modprobe -d $path1 $i &> /dev/null || modprobe -d $path2 $i &> /dev/null;
+		modprobe -d $path1 "$i" &> /dev/null || modprobe -d $path2 "$i" &> /dev/null;
 		[ "$?" = "0" ] && return; # module is successfully loaded - return
 	done
 }
