@@ -15,7 +15,7 @@
 //
 
 cc_defaults {
-    name: "libgptutils.tapas",
+    name: "libgptutils.spes",
     export_include_dirs: ["."],
     recovery_available: true,
     shared_libs: [
@@ -31,12 +31,12 @@ cc_defaults {
 }
 
 cc_library {
-    name: "libgptutils-sg.tapas",
-    defaults: ["libgptutils.tapas"],
+    name: "libgptutils-sg.spes",
+    defaults: ["libgptutils.spes"],
 }
 
 cc_library {
-    name: "libgptutils-bsg.tapas",
-    defaults: ["libgptutils.tapas"],
+    name: "libgptutils-bsg.spes",
+    defaults: ["libgptutils.spes"],
     cflags: ["-D_BSG_FRAMEWORK_KERNEL_HEADERS"],
 }

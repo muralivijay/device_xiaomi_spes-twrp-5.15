@@ -9,16 +9,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from device configuration
-$(call inherit-product, device/xiaomi/tapas/device.mk)
+$(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit from TWRP common configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 ## Device identifier
-PRODUCT_DEVICE := tapas
-PRODUCT_NAME := twrp_tapas
+PRODUCT_DEVICE := spes
+PRODUCT_NAME := twrp_spes
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 12/13 4G
+PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := $(PRODUCT_BRAND)
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

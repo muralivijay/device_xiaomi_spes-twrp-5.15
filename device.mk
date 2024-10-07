@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/tapas
+DEVICE_PATH := device/xiaomi/spes
 
 # Configure Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Configure emulated_storage.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
-TARGET_OTA_ASSERT_DEVICE := topaz,tapas,sapphire,sapphiren
+TARGET_OTA_ASSERT_DEVICE := spes,spesn
 
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
@@ -64,7 +64,6 @@ AB_OTA_PARTITIONS += \
     init_boot \
     odm \
     product \
-    recovery \
     system \
     system_dlkm \
     system_ext \
