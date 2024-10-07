@@ -101,7 +101,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	vendor/qcom/opensource/commonsys-intf/display
 
 # TWRP - Specifics
-TW_DEVICE_VERSION       := murali-5.15
+TW_DEVICE_VERSION       := MURALI-5.15
 TW_THEME                := portrait_hdpi
 TW_DEFAULT_LANGUAGE     := en
 TW_USE_TOOLBOX          := true
@@ -118,6 +118,7 @@ TWRP_INCLUDE_LOGCAT     := true
 TW_INCLUDE_PYTHON       := true
 TW_NO_SCREEN_BLANK      := true
 TW_FRAMERATE            := 60
+TW_NO_FLASH_CURRENT_TWRP := true
 
 # TWRP notch offsets
 TW_STATUS_ICONS_ALIGN := center
