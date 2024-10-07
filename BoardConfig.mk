@@ -37,10 +37,10 @@ TARGET_KERNEL_HEADER_ARCH     := arm64
 BOARD_KERNEL_IMAGE_NAME       := Image
 BOARD_BOOT_HEADER_VERSION     := 4
 TARGET_KERNEL_CLANG_COMPILE   := true
-TARGET_PREBUILT_DTB           := $(DEVICE_PATH)/prebuilt/dtb
+TARGET_PREBUILT_DTB           := $(DEVICE_PATH)/prebuilt/dtb.img
 TARGET_PREBUILT_KERNEL        := /dev/null # empty kernel image
+BOARD_MKBOOTIMG_ARGS          += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS          += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_MKBOOTIMG_ARGS          += --pagesize $(BOARD_KERNEL_PAGESIZE)
 
 # device information for "fastboot update <zip-file>"
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
