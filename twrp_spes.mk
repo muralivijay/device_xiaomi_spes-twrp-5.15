@@ -14,6 +14,9 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 # Inherit from TWRP common configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
+# product
+TARGET_BUILD_TYPE=debug
+
 ## Device identifier
 PRODUCT_DEVICE := spes
 PRODUCT_NAME := twrp_spes
