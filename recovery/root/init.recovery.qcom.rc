@@ -38,8 +38,3 @@ on property:twrp.modules.loaded=true
     mount vfat /dev/block/bootdevice/by-name/modem${ro.boot.slot_suffix} /firmware ro
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
-
-# Symlink Flashlight
-on property:twrp.modules.loaded=true
-    symlink /sys/class/leds/led:torch/brightness /system/etc/flashlight/brightness
-#
