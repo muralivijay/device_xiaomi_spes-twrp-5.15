@@ -55,6 +55,13 @@ TARGET_SCREEN_WIDTH   := 1080
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION  := false
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.xiaomi \
+    android.hardware.health-service.xiaomi_recovery \
+    android.hardware.health-V1-ndk.vendor \
+    android.hardware.health@2.1.vendor
+
 # Virtual A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
