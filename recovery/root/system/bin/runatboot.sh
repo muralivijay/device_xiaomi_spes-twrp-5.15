@@ -22,7 +22,7 @@
 load_touch_drivers() {
 	local path1=/vendor/lib/modules/1.1;
 	local path2=/lib/modules;
-	local modules="focaltech_ts_i2c goodix_ts_9896";
+	local modules="focaltech_fts_i2c";
 
 	# loop through the touch modules
 	for i in $modules
