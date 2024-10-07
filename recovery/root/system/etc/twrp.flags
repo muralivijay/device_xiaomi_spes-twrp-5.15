@@ -8,7 +8,6 @@
 /boot                  emmc    /dev/block/bootdevice/by-name/boot                                 flags=display="Boot";backup=1;slotselect;flashimg=1
 /init_boot             emmc    /dev/block/bootdevice/by-name/init_boot                            flags=display="Init_Boot";slotselect;backup=1;flashimg=1
 /vendor_boot           emmc    /dev/block/bootdevice/by-name/vendor_boot                          flags=display="Vendor_Boot";slotselect;backup=1;flashimg=1
-/recovery              emmc    /dev/block/bootdevice/by-name/recovery                             flags=display="Recovery";slotselect;backup=1;flashimg=1
 
 # Data/Metadata
 /metadata              f2fs    /dev/block/bootdevice/by-name/metadata                             flags=display="Metadata";backup=1;wrappedkey
