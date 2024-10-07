@@ -42,6 +42,13 @@ TARGET_PREBUILT_KERNEL        := /dev/null # empty kernel image
 BOARD_MKBOOTIMG_ARGS          += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS          += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+BOARD_KERNEL_CMDLINE := \
+    video=vfb:640x400,bpp=32,memsize=3072000 \
+    androidboot.hardware=qcom \
+    androidboot.memcg=1 \
+    androidboot.usbcontroller=4e00000.dwc3 \
+    androidboot.selinux=permissive
+
 # device information for "fastboot update <zip-file>"
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
