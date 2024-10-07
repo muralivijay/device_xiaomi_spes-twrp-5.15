@@ -51,7 +51,7 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3 # disable hashtree/verification
 
 # Despite being VA/B device, there is a dedicated recovery partition
 BOARD_USES_RECOVERY_AS_BOOT :=
-BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Use LZ4 Ramdisk compression instead of GZIP
 BOARD_RAMDISK_USE_LZ4 := true
