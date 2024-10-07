@@ -22,8 +22,7 @@ TARGET_OTA_ASSERT_DEVICE := spes,spesn
 
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl-qti.recovery \
-    miui_prebuilt
+    android.hardware.boot@1.2-impl-qti.recovery
 
 # FastbootD support
 PRODUCT_PACKAGES += \
