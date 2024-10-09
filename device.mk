@@ -125,8 +125,7 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone7/temp"
 TW_BRIGHTNESS_PATH      := "/sys/class/backlight/panel0-backlight/brightness"
 
 # Vendor modules required for the recovery to function properly
-TW_LOAD_VENDOR_MODULES  += "focaltech_fts_i2c.ko
-TW_LOAD_VENDOR_MODULES  += adsp_loader_dlkm.ko qti_battery_charger.ko"
+TW_LOAD_VENDOR_BOOT_MODULES := true
 
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_EXCLUDE_DEFAULT_USB_INIT   := true
