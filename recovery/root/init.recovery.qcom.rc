@@ -1,3 +1,5 @@
+import /init.recovery.qcom_decrypt.rc
+
 # Set SELinux to Permissive
 on early-init
     write /sys/fs/selinux/enforce 0
