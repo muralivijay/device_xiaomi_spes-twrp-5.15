@@ -123,7 +123,7 @@ TW_Y_OFFSET := 99
 TW_H_OFFSET := -99
 
 # Blacklist Goodix fingerprint. There's no reason to include this input in recovery
-TW_INPUT_BLACKLIST := "uinput-goodix"
+TW_INPUT_BLACKLIST := "hbtp_vm"
 
 TW_BRIGHTNESS_PATH      := "/sys/class/backlight/panel0-backlight/brightness"
 
