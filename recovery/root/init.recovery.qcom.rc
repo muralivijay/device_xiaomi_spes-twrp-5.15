@@ -1,5 +1,12 @@
 import /init.recovery.qcom_decrypt.rc
 
+service vendor.qti.vibrator /system/bin/vendor.qti.hardware.vibrator.service
+    user root
+    group root
+    disabled
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    seclabel u:r:recovery:s0
+
 # Set SELinux to Permissive
 on early-init
     write /sys/fs/selinux/enforce 0
@@ -29,11 +36,7 @@ on fs
 
 on boot
     setprop sys.usb.config adb
-
-# Haptic feedback
-on boot
-    write /sys/class/leds/vibrator/trigger transient
-    start vibratorfeature-hal-service
+    start vendor.qti.vibrator
 
 on property:twrp.modules.loaded=true
     mkdir /firmware
